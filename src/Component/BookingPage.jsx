@@ -48,10 +48,10 @@ export const BookingPage = ()=>{
         }
         <form  onSubmit={handleBookTicket} className=" flex flex-col gap-y-2 px-4 py-2 w-4/5 lg:w-2/5          mx-auto mt-20 border-red-700 border-2 ">
             <text className=" text-center pb-5 pt-8 text-xl">Book your Movie Tiket</text>
-            <input placeholder=" Enter your full name  " className=" border-2 border-red-600 h-10 pl-2" name="fullname" value={data.fullname} onChange={handledata}/>
+            <input placeholder=" Enter your full name  " className=" border-2 border-red-600 h-10 pl-2" name="fullname" value={data.fullname} onChange={handledata} required/>
             
-            <input type="date" className=" border-2 border-red-600 h-10 pl-2" name="date" value={data.date} onChange={handledata}/>
-            <input type="time" className=" border-2 border-red-600 h-10 pl-2  " value={data.time} onChange={handledata} name="time "/>
+            <input type="date" className=" border-2 border-red-600 h-10 pl-2" name="date" value={data.date} onChange={handledata} required />
+            <input type="time" className=" border-2 border-red-600 h-10 pl-2  " value={data.time} onChange={handledata} name="time " required />
             <div className="flex flex-row mx-auto gap-x-2 my-5">
                 
                 <button className=" bg-red-700 text-white px-6 py-2 text-xl" >Book Ticket</button>
