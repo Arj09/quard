@@ -34,7 +34,7 @@ export const BookingPage = ()=>{
         <>
         <text className=" flex flex-row justify-center bg-red-600 text-white w-4/5 py-5 mx-auto text-xl my-4">Ticket Booking page</text>
         <div className=" flex flex-row w-4/5 mx-auto my-2">
-        <button className=" bg-red-700 text-white px-4 py-2 text-xl" onChange={handleBack}>Back</button>
+            <button className=" bg-red-700 text-white px-4 py-2 text-xl" onClick={handleBack}>Back</button>
         </div>
         {
             show && (
